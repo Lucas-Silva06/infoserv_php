@@ -14,7 +14,7 @@ switch ($nota) {
         default:
         echo "Reprovado";
         }
-
+echo "<br>";
         $perfil = "admin";
 
         if ($perfil == "admin") {
@@ -49,13 +49,29 @@ else {
 
 /** 
  * Calcular o fatorial de (5!)
- * 5 * 4 *3 *2 * 1 = 120;
+ * 5 * 4 * 3 * 2 * 1 = 120;
  * utilizar laço de repetição
  */
 
 $numero = 5;
-$fatorial = 0;
+$fatorial = 1;
 
 for ($numero = 5; $numero > 0; $numero-- ) {
-    echo $fatorial = $numero * 5;
+$fatorial = $fatorial * $numero;
 }
+echo "O fatorial é: " . "$fatorial";
+
+/**
+ * Mudei o fatorial do código para 1, pois na hora que estava fazendo me toquei que se $fatorial = 0
+ * então na úlitma passada e multiplicação ficaria 0.
+ * Até por que qualquer número  * 0 = 0
+ * Então na prática, o código está sendo executado assim:
+ * $fatorial = 1 * 5 = 5
+ * 5 > 0 então 5 -4
+ * Como o $fatorial está dentro do próprio resultado, então $fatorial guarda o último resultado e multiplica com $numero
+ * que está sendo descontado 1 a cada passada
+ * $fatorial = 5 * 4 = 20
+ * $fatorial = 20 * 3 = 60
+ * $fatorial = 60 * 2 = 120
+ * $fatorial = 120 * 1 = 120
+ */
