@@ -106,6 +106,7 @@ echo "<br>";
  * Dica: utilizar IF ELSE ou SWITCH CASE
  * O simulador irá possuir 4 variáveis: $operador, $resultado, $valorA e $valorB
  */
+
 $valorA = 10;
 $operador = "+";
 $valorB = 10;
@@ -130,17 +131,19 @@ elseif ($operador == "/") {
 elseif ($operador == "-") {
     echo "Operador inválido. Digite o operador novamente";
 }
-
+echo "<br>";
 
 /** 
  * Calcular a area de um quadrado. E exibir o resultado
  * Com a mensagem: A area do quadrado é:
  */
+
 $ladoA =5;
 $ladoB = 5;
 $area = $ladoA * $ladoB;
 echo "A área do quadrado é: $area";
 echo "<br>";
+
 /** 
  * Calcular a area de um triangulo equilatero. E exibir o resultado
  * Com a mensagem: A area do triangulo equilatero é
@@ -213,3 +216,22 @@ else {
 }
 echo "<br>";
 
+/** 
+ * Calcular e exibir a tabuada do 5 utilizando FOR
+ * Resultado esperado:
+ * 5 x 1 = 5
+ * 5 x 2 = 10
+ * etc
+ */
+
+$tabuadaDo5 = 50;
+
+/** 
+ * Calcular e exibir todos os numeros pares de 2 até 50.
+ * Sem pular de 2 em 2
+ * Dica: utilizar formula dos numeros pares
+ */
+
+/** 
+ * Calcular e exibir os 5 primeiros numeros primos.
+ */
