@@ -224,14 +224,30 @@ echo "<br>";
  * etc
  */
 
-$tabuadaDo5 = 50;
+$numero = 5;
 
+for ($i = 1; $i <= 10; $i++) {
+    $resultado = $numero * $i;
+    echo "$numero x $i = $resultado <br>";
+}
 /** 
  * Calcular e exibir todos os numeros pares de 2 até 50.
  * Sem pular de 2 em 2
- * Dica: utilizar formula dos numeros pares
+ * Dica: utilizar formula dos numeros pares no FOR.
  */
 
+for ($numero = 2; $numero <= 50; $numero++) {
+    $resto = $numero % 2;
+    $ehPar = $resto == 0;
+    
+    if ($ehPar) {
+        echo "O $numero é par . <br>";
+    }
+}
+
+
+
 /** 
- * Calcular e exibir os 5 primeiros numeros primos.
+ * Calcular e exibir os 5 primeiros numeros primos
+ * Dica: utilizar formula dos numeros pares
  */
